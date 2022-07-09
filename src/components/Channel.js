@@ -29,13 +29,13 @@ const Channel = ({ user = null }) => {
     setNewMessage(e.target.value);
   };
 
-  const handleOnSubmit = e => {
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
 
     const trimmedMessage = newMessage.trim();
     if (trimmedMessage) {
       // Add new message in Firestore
-      messagesRef.add({
+      await messagesRef.add({
         text: trimmedMessage,
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
         uid,

@@ -103,10 +103,10 @@ function App() {
                 clipRule="evenodd"
               />
             </svg>
-            React FireChat
+            Party Town Chat
           </h2>
           <p className="mb-8 text-lg text-center">
-            The easiest way to chat with people all around the world.
+            Sign in to continue.
           </p>
           <button
             onClick={signInWithGoogle}
@@ -151,7 +151,7 @@ function App() {
         className="flex-shrink-0 flex items-center justify-between px-4 sm:px-8 shadow-md"
         style={{ height: 'var(--topbar-height)' }}
       >
-        <a href="https://alterclass.io/courses/react">
+        <a href="https://goibibo.com/">
           <img src={brandLogo} alt="AlterClass" width={55} />
         </a>
         <div className="flex items-center">

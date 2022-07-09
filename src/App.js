@@ -10,12 +10,13 @@ import Channel from './components/Channel';
 import Loader from './components/Loader';
 
 firebase.initializeApp({
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_AUTH_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID,
+  apiKey: "AIzaSyBahwjkduaGanciPXHrQepaCJJgZw6RQjI",
+  authDomain: "groupchat-18b29.firebaseapp.com",
+  projectId: "groupchat-18b29",
+  storageBucket: "groupchat-18b29.appspot.com",
+  messagingSenderId: "764726182505",
+  appId: "1:764726182505:web:7248b7ed2b899c5fb898f8",
+  measurementId: "G-EW0HP1L4SQ"
 });
 
 const MoonIcon = props => (
@@ -49,8 +50,8 @@ function App() {
   const [darkMode, setDarkMode] = useDarkMode();
 
   const brandLogo = darkMode
-    ? `${process.env.PUBLIC_URL}/logo_white.svg`
-    : `${process.env.PUBLIC_URL}/logo.svg`;
+    ? `${process.env.PUBLIC_URL}/logo1.png`
+    : `${process.env.PUBLIC_URL}/logo1.png`;
 
   const ThemeIcon = darkMode ? SunIcon : MoonIcon;
 
@@ -151,7 +152,7 @@ function App() {
         style={{ height: 'var(--topbar-height)' }}
       >
         <a href="https://alterclass.io/courses/react">
-          <img src={brandLogo} alt="AlterClass" width={150} />
+          <img src={brandLogo} alt="AlterClass" width={55} />
         </a>
         <div className="flex items-center">
           {user ? (
